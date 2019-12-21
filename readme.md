@@ -1,7 +1,6 @@
 # Web Switch is an iOS style switch
 
 ## Description 
- ---
 
 I ran into issues trying to use another iOS style switch on my blazor application and decided to make my own. 
 
