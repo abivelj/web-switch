@@ -18,3 +18,11 @@ I ran into issues trying to use another iOS style switch on my blazor applicatio
 
 - `size` : the size of the element, `small`, `medium`, `large`
 - `textPosition` : the position of everything inside a when a label is wrapped around your checkbox, `left`, `right`, `default`
+
+## Edit locally
+
+To run and test
+`npm start`
+
+To run a build version
+`npm run build`
