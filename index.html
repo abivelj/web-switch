@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="webSwitch.less" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <div>
+        Example 1: With a label and text position on left
+        <div>
+          <label>
+            <input type="checkbox" id="example1" />
+            Click me here
+          </label>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div>
+        Example 2: With a label and span inside and an icon
+        <div>
+          <label>
+            <input type="checkbox" id="example2" />
+            <i class="fa fa-users" />
+          </label>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div>
+        Example 3: Without a label
+        <div>
+          <input type="checkbox" id="example3" />
+        </div>
+      </div>
+      <br />
+      <br />
+      <div>
+        <div>
+          Example 4: Sizing
+        </div>
+        <span>
+          <div>Small</div>
+          <input type="checkbox" id="exampleSmall" />
+        </span>
+        <span>
+          <div>Medium</div>
+          <input type="checkbox" id="exampleMedium" />
+        </span>
+        <span>
+          <div>Large</div>
+          <input type="checkbox" id="exampleLarge" />
+        </span>
+      </div>
+      <br />
+      <br />
+      
+        <div>Example 5: Disabled</div>
+        <input type="checkbox" disabled="disabled" id="exampleDisabled" />
+      </div>
+    </div>
+
+    <script src="webSwitch.ts"></script>
+
+    <script type="text/javascript">
+      var example1 = document.getElementById("example1");
+      new WebSwitch(example1, { textPosition: "left" });
+
+      var example2 = document.getElementById("example2");
+      new WebSwitch(example2, { textPosition: "right" });
+
+      var example3 = document.getElementById("example3");
+      new WebSwitch(example3);
+
+      var exampleSmall = document.getElementById("exampleSmall");
+      new WebSwitch(exampleSmall, { size: "small" });
+
+      var exampleMedium = document.getElementById("exampleMedium");
+      new WebSwitch(exampleMedium, { size: "medium" });
+
+      var exampleLarge = document.getElementById("exampleLarge");
+      new WebSwitch(exampleLarge, { size: "large" });
+
+      var exampleDisabled = document.getElementById("exampleDisabled");
+      new WebSwitch(exampleDisabled);
+
+    </script>
+  </body>
+</html>

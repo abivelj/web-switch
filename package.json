@@ -1,0 +1,21 @@
+{
+  "name": "web-switch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "less": "^3.10.3",
+    "typescript": "^3.7.4"
+  },
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build webSwitch.ts webSwitch.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
